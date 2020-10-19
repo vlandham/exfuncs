@@ -1,0 +1,16 @@
+[dev-packages]
+black = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+black = "black exfuncs"
+flake8 = "flake8 exfuncs"
+
+[pipenv]
+allow_prereleases = true
+
+[packages]
+exfuncs = {editable = true,path = "."}
